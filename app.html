@@ -1,0 +1,59 @@
+<template>
+	<div class="container-fluid">
+		<div class="col-md-offset-4 col-md-4">
+			<h1>An Aurelia HighCharts Component</h1>
+
+			<h2>Changing Chart Binding</h2>
+			<p>
+				This simple test ensures the Chart control will
+				change graph when the data is swapped over. It 
+				also ensures the graph is drawn within the bounds
+				of the element that contains it.
+			</p>
+
+			<p>
+				Change the graph with the links below.
+			</p>
+
+			<p>
+				<a href="#" 
+					click.trigger="changeGraph(graphData.lineGraph)">
+					Line Graph
+				</a>
+			</p>
+
+			<p>
+				<a href="#" 
+					click.trigger="changeGraph(graphData.pieChart)">
+					Pie Chart
+				</a>
+			</p>
+
+			<div class="well">
+				<require from="./chart"></require>
+				<chart chart-options.bind="chartOptions"></chart>
+			</div>
+			
+			<hr/>
+
+			<h2>Showing Charts Using if.bind</h2>
+			<p>
+				This test makes sure I'm using the correct events
+				so that a chart this isn't even rendered yet and
+				then shown is bound correctly.
+			</p>
+			<p>
+				<a href="#" 
+					click.trigger="showChart(graphData.lineGraph)"
+					if.bind="!isDisplayed">
+					Show Graph
+				</a>
+			</p>
+			<div class="well" if.bind="isDisplayed">
+				<require from="./chart"></require>
+				<chart chart-options.bind="hiddenChartOptions"></chart>
+			</div>
+		</div>
+
+	</div>
+</template>

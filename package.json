@@ -1,0 +1,43 @@
+{
+  "name": "aurelia-highcharts",
+  "version": "1.0.0",
+  "description": "An example application integrating HighCharts with Aurelia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philiphendry/aurelia-highcharts.git"
+  },
+  "keywords": [
+    "aurelia",
+    "highcharts"
+  ],
+  "author": "Philip Hendry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/philiphendry/aurelia-highcharts/issues"
+  },
+  "homepage": "https://github.com/philiphendry/aurelia-highcharts#readme",
+  "devDependencies": {
+    "jspm": "^0.16.2"
+  },
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "aurelia-bootstrapper": "github:aurelia/bootstrapper@^0.17.0",
+      "aurelia-framework": "github:aurelia/framework@^0.16.0",
+      "aurelia-task-queue": "github:aurelia/task-queue@^0.7.0",
+      "bootstrap": "github:twbs/bootstrap@^3.3.5",
+      "css": "github:systemjs/plugin-css@^0.1.16",
+      "highcharts": "github:highslide-software/highcharts.com@^4.1.8",
+      "jquery": "github:components/jquery@^2.1.4"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.22",
+      "babel-runtime": "npm:babel-runtime@^5.8.20",
+      "core-js": "npm:core-js@^1.1.0"
+    }
+  }
+}
