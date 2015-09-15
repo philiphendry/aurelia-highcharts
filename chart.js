@@ -23,8 +23,6 @@ export class ChartCustomElement {
 		}
 	};
 
-	@bindable title;
-	@bindable dataName;
 	@bindable chartOptions;
 
     constructor(element, taskQueue) {
@@ -41,7 +39,7 @@ export class ChartCustomElement {
     	let newSettings = {};
     	$.extend(true, newSettings, this.chartDefaults, value);
 		this.taskQueue.queueMicroTask(() => 
-			setTimeout(() => $(this.element).highcharts(newSettings), 50)
+			$(this.element).highcharts(newSettings)
 		);
 	}
 }
