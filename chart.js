@@ -2,6 +2,7 @@ import {bindable, inject} from "aurelia-framework";
 import {TaskQueue} from "aurelia-task-queue";
 import $ from "jquery";
 import Hightcharts from "highcharts";
+import Exporting from "highcharts/modules/exporting";
 import "./chart.css!";
 
 @inject(Element, TaskQueue)
